@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/add_friend"
+        android:textSize="20sp"
+        android:layout_margin="@dimen/activity_horizontal_dimens"
+        android:textColor="@color/purple"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/activity_horizontal_dimens"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/edtName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:hint="@string/name"
+            android:textColorHint="@color/light_grey"
+            android:textColor="@color/black"
+            android:inputType="text"
+            android:imeOptions="actionDone"
+            android:autofillHints="" />
+
+        <Spinner
+            android:id="@+id/spinnerGender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/activity_horizontal_dimens"
+            android:layout_marginTop="@dimen/activity_horizontal_dimens"
+            android:textColor="@color/black"
+            android:entries="@array/gender_list"/>
+
+        <EditText
+            android:id="@+id/edtEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:layout_marginTop="@dimen/activity_horizontal_dimens"
+            android:hint="@string/email"
+            android:textColorHint="@color/light_grey"
+            android:textColor="@color/black"
+            android:inputType="textEmailAddress"
+            android:imeOptions="actionDone"
+            android:autofillHints=""/>
+
+        <EditText
+            android:id="@+id/edtTelp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:layout_marginTop="@dimen/activity_horizontal_dimens"
+            android:hint="@string/telp"
+            android:textColorHint="@color/light_grey"
+            android:textColor="@color/black"
+            android:inputType="number"
+            android:imeOptions="actionDone"
+            android:autofillHints=""/>
+
+        <EditText
+            android:id="@+id/edtAddress"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:padding="12dp"
+            android:layout_marginTop="@dimen/activity_horizontal_dimens"
+            android:hint="@string/address"
+            android:textColorHint="@color/light_grey"
+            android:textColor="@color/black"
+            android:inputType="textMultiLine"
+            android:gravity="top"
+            android:imeOptions="actionDone"
+            android:autofillHints=""/>
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="24dp"
+            android:text="@string/save"/>
+
+    </LinearLayout>
+
+</LinearLayout>

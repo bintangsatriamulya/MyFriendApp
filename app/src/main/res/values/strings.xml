@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">MyFriendApp</string>
+    <string name="add_friend_button_description">Description\n</string>
+    <string name="save">Save</string>
+    <string name="address">Address</string>
+    <string name="add_friend">Add Friend</string>
+    <string name="name">Name</string>
+    <string name="email">Email</string>
+    <string name="telp">Telp</string>
+</resources>
